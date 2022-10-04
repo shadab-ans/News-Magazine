@@ -1,0 +1,501 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* overflow-x: hidden; */
+}
+
+body {
+  font-family: "Karla", sans-serif;
+}
+
+header {
+  background-color: rgb(11, 16, 27);
+  width: 100vw;
+  height: 40px;
+  display: flex;
+}
+
+.head-cont {
+  width: 100%;
+  display: flex;
+}
+
+.left {
+  width: 22%;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 30px;
+  align-items: center;
+  background-color: rgb(11, 16, 27);
+  color: rgb(230, 230, 230);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 10px;
+}
+
+.left p:hover {
+  cursor: pointer;
+  color: red;
+}
+
+.right i:hover {
+  cursor: pointer;
+  color: red;
+}
+
+.head-cont .right {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu i:hover {
+  cursor: pointer;
+  color: red;
+}
+
+.mid {
+  width: 60%;
+}
+
+.right {
+  width: 10%;
+  color: rgb(230, 230, 230);
+  /* background-color: tomato; */
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  font-size: 14px;
+}
+
+.nav-cont {
+  width: 100vw;
+  height: 85px;
+  display: flex;
+  align-items: center;
+  background-color: rgb(8, 17, 38);
+  color: white;
+  font-family: "Karla", sans-serif;
+}
+
+.logo {
+  width: 40px;
+  margin: 0 20px;
+}
+
+.logo img,
+img:hover {
+  width: 100%;
+  cursor: pointer;
+}
+
+.brandname {
+  width: 20%;
+  font-size: 22px;
+}
+
+.brandname:hover {
+  cursor: pointer;
+}
+
+.list {
+  width: 45%;
+  height: 80px;
+  line-height: 80px;
+  /* background-color: violet; */
+}
+
+.list li {
+  padding: 0px 8px;
+  height: 50%;
+}
+
+.list li:hover {
+  cursor: pointer;
+  color: red;
+  border-bottom: red 3px solid;
+  background-color: rgba(17, 26, 46, 0.493);
+}
+
+.active,
+.home {
+  border-bottom: red 3px solid;
+  background-color: rgba(17, 26, 46, 0.493);
+}
+
+.dropbtn {
+  background-color: transparent;
+  color: white;
+  padding: 16px;
+  font-size: 20px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown i {
+  font-size: small;
+  margin-left: 20px;
+}
+
+.dropdown-content {
+  /* display: none; */
+  position: absolute;
+  background-color: rgb(8, 17, 38);
+  /* margin-top: 3px; */
+  /* margin-left: -8px; */
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  height: 250px;
+}
+
+.dropdown-content a {
+  color: white;
+  border: 1px solid rgba(165, 164, 164, 0.219);
+  border-bottom: none;
+  font-size: 15px;
+  padding: 0px 10px;
+  text-decoration: none;
+  display: block;
+  height: 30px;
+  /* margin-top: -10px; */
+}
+
+.dropdown-content a:hover {
+  background-color: rgba(17, 26, 46, 0.493);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: transparent;
+  border: none;
+}
+
+ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  /* background-color: violet; */
+}
+
+li {
+  list-style: none;
+}
+
+.sub-btn {
+  width: 20%;
+  padding: 10px;
+  display: flex;
+  justify-content: right;
+  /* background-color: yellow; */
+}
+
+.gap {
+  width: 60%;
+}
+
+button {
+  width: 60%;
+  color: white;
+  padding: 8px;
+  background-color: transparent;
+  border: rgb(63, 62, 62) 1px solid;
+  border-radius: 3px;
+  font-family: "Karla", sans-serif;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgb(27, 27, 27);
+  border: rgb(63, 62, 62) 2px solid;
+}
+
+.home-page {
+  width: 100vw;
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-between;
+  /* background-color: violet; */
+}
+
+.home-left {
+  display: grid;
+  width: 70%;
+  margin-left: 30px;
+  /* background-color: red; */
+  font-size: 20px;
+  height: max-content;
+}
+
+.home-left:hover {
+  cursor: pointer;
+}
+
+/* .home-wrt{
+    /* background-color: rgb(241, 156, 156); */
+/* margin-top: -30px; */
+/* } */
+
+.home-h1 h1:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.para p {
+  padding: 20px 0px;
+  font-size: 11px;
+  color: red;
+}
+
+p {
+  font-size: 13px;
+}
+
+.read-btn button {
+  width: 20%;
+  color: black;
+  border: 1px solid rgb(223, 223, 223);
+  margin-top: 15px;
+}
+
+.read-btn button:hover {
+  color: white;
+  background-color: black;
+  border: none;
+}
+
+.ad{
+    margin-top: 10px;
+}
+
+.home-right {
+  width: 50%;
+  display: flex;
+  margin: 0px 30px;
+  /* background-color: violet; */
+}
+
+.home-right-1 {
+  width: 40%;
+  /* background-color: tomato; */
+  border-top: 3px solid black;
+}
+
+.home-right-1 h1 {
+  border-bottom: 1px solid rgb(167, 164, 164);
+  margin-bottom: 15px;
+  padding: 8px 0px;
+}
+
+.home-right-1 h3 {
+  margin-top: 20px;
+}
+
+.home-right-1 h3:hover {
+  cursor: pointer;
+  color: red;
+}
+
+.home-right-1 p {
+  color: red;
+  padding: 15px 0px;
+  font-size: 12px;
+  border-bottom: 1px solid rgb(167, 164, 164);
+}
+
+.home-right-2 {
+  width: 50%;
+  padding: 0px 30px;
+}
+
+.home-right-2 h3 {
+  padding: 15px 0px;
+}
+
+.home-right-2 p {
+  color: red;
+  padding-bottom: 20px;
+  font-size: 12px;
+}
+
+.home-right-2 h3:hover {
+  cursor: pointer;
+  color: red;
+}
+
+.politics {
+  width: 100vw;
+  /* display: grid; */
+  margin-top: 50px;
+}
+
+.politics-container {
+  width: 92%;
+  padding: 30px;
+  /* display: grid; */
+}
+
+.politics-up {
+  width: 100%;
+  height: 40%;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  /* background-color: blueviolet; */
+}
+
+.poli-up {
+  display: grid;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.politics-down {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.politics-container p {
+  color: red;
+  padding-bottom: 20px;
+  font-size: 12px;
+}
+
+.politics-container h3 {
+  padding: 15px 0px;
+}
+
+.politics-container h1 {
+  border-top: 3px solid black;
+  border-bottom: 1px solid rgb(167, 164, 164);
+  margin-bottom: 15px;
+  padding: 8px 0px;
+}
+
+footer {
+  background-color: rgb(11, 16, 27);
+  color: white;
+}
+
+.foot-cont {
+  display: flex;
+  padding: 50px;
+}
+
+.cont-1 {
+  display: grid;
+  width: 30%;
+  justify-content: space-evenly;
+  padding: 0px 40px;
+}
+
+.icon {
+  display: flex;
+  justify-content: start;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.icon i {
+  padding: 0 8px;
+}
+
+.icon i:hover, .cont-2 p:hover, .cont-3 p:hover {
+    cursor: pointer;
+    color: red;
+}
+
+.cont-2 {
+  display: grid;
+  width: 20%;
+  margin: 0px 10px;
+}
+
+.cont-3 {
+  display: grid;
+  width: 20%;
+  margin: 0px 50px;
+}
+
+.cont-4 {
+  display: grid;
+  width: 30%;
+  margin: 0px 10px;
+}
+
+.form-cont #email{
+    margin: 8px 0;
+}
+
+.form-cont button{
+    width: 30%;
+    font-size: 0.7rem;
+}
+
+.checkbox{
+    display: flex;
+}
+
+.checkbox p{
+    margin-left: 5px;
+}
+
+.copyright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    color: gray;
+}
+
+.copyright span:hover{
+    cursor: pointer;
+    color: red;
+}
+
+/*  */
+/* #feature{
+    display: block;
+} */
+
+.myDropdown {
+  /* display: flex; */
+  flex-direction: column;
+  background: rgb(27, 27, 27);
+  width: 200px;
+  height: 200px;
+  z-index: 1;
+}
+
+.myDropdown li {
+  height: 10px;
+}
+
+.image {
+  /* background-color: blanchedalmond; */
+  width: 100%;
+  position: relative;
+}
+
+#hover-fade {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 255, 0);
+  position: absolute;
+  top: 0%;
+  z-index: 2;
+  transition: 0.3s linear;
+}
+
+#hover-fade:hover {
+  background-color: rgba(255, 255, 255, 0.274);
+}
